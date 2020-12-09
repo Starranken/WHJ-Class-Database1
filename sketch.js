@@ -21,16 +21,16 @@ function setup(){
 function draw(){
     background("white");
     if(keyDown(LEFT_ARROW)){
-        writePosition(-5,0);
+        writePosition(-1,0);
     }
     if(keyDown(RIGHT_ARROW)){
-        writePosition(5,0);
+        writePosition(1,0);
     }
     if(keyDown(UP_ARROW)){
-        writePosition(0,-5);
+        writePosition(0,-1);
     }
     if(keyDown(DOWN_ARROW)){
-        writePosition(0,+5);
+        writePosition(0,+1);
     }
 
     if(keyDown(65)){
