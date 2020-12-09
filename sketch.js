@@ -24,13 +24,11 @@ function draw(){
     else if(keyDown(DOWN_ARROW)){
         writePosition(0,+1);
     }
-    
-    if(keyDown(SPACE){
-        database.ref("ball/position).set({
-            x: 250;
-            y: 250;
-        });
+   
+    if(keyDown(32)){
+        reset();
     }
+
     drawSprites();
 }
 
@@ -44,5 +42,12 @@ function writePosition(x,y){
     database.ref('ball/position').set({
         x: position.x + x,
         y: position.y + y
+    })
+}
+
+function reset(){
+    database.ref('ball/position').set({
+        x: 250,
+        y: 250
     })
 }
