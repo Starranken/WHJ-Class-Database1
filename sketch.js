@@ -29,7 +29,7 @@ function draw(){
         database.ref("ball/position).set({
             x: 250;
             y: 250;
-        }
+        });
     }
     drawSprites();
 }
